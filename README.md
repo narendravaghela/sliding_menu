@@ -1,4 +1,4 @@
-sliding_menu
+Sliding Menu
 ============
 
 Sliding menu using jQuery

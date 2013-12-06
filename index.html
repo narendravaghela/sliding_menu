@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+	<head>
+		<title>Sliding Menu</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+
+		<div class="container">
+			<div class="row">
+				<div class="page-header">
+					<h1>Sliding Menu</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<ul class="nav nav-pills nav-stacked">
+						<li class="active"><a href="#">Simple</a></li>
+						<li><a href="animation.html">Slide Animation</a></li>
+					</ul>
+				</div>
+				<div class="col-md-9">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="sliding-menu">
+								<span class="menu btn label-success"><span class="glyphicon glyphicon-align-center"></span> <span class="menu-text">Center</span></span>
+								<span class="menu btn label-primary"><span class="glyphicon glyphicon-align-justify"></span> <span class="menu-text">Justify</span></span>
+								<span class="menu btn label-info"><span class="glyphicon glyphicon-align-left"></span> <span class="menu-text">Left</span></span>
+								<span class="menu btn label-warning"><span class="glyphicon glyphicon-align-right"></span> <span class="menu-text">Right</span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- /.container -->
+
+		<!--scripts-->
+		<script type="text/javascript" src="js/jquery/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$('.sliding-menu').on('mouseenter', 'span.menu', function() {
+				$('span.menu-text', $(this)).show();
+			}).on('mouseleave', 'span.menu', function() {
+				$('span.menu-text', $(this)).hide();
+			});
+		</script>
+	</body>
+</html>
